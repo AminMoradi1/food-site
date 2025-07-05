@@ -8,7 +8,13 @@ function Card(props) {
   const { id, name, price, details, discount } = props;
   return (
     <div className={styles.container}>
-      <Image src={`/images/${id}.jpeg`} alt="" fill className={styles.image}/>
+      <Image
+        src={`/images/${id}.jpeg`}
+        alt=""
+        width={400}
+        height={130}
+        className={styles.image}
+      />
       <div className={styles.details}>
         <h4>{name}</h4>
         <div>
