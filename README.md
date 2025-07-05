@@ -33,12 +33,3 @@ This is a food ordering web application built with **Next.js**, implementing dyn
 | `/foods/[id]` | SSR | Server-rendered food detail page |
 | `/categories/[category]` | ISR | Category pages regenerated on demand |
 
----
-
-## 🧪 How to run locally
-
-```bash
-git clone https://github.com/AminMoradi1/food-site.git
-cd food-site
-npm install
-npm run dev
