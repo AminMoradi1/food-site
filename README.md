@@ -1,40 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🍽️ Food Ordering Website - Next.js
 
-## Getting Started
+This is a food ordering web application built with **Next.js**, implementing dynamic and static routing along with data-fetching techniques such as **SSG (Static Site Generation)**, **SSR (Server Side Rendering)**, and **ISR (Incremental Static Regeneration)**.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- ✅ **Dynamic Routing** for individual food detail pages and categories
+- ✅ **SSG, SSR & ISR** used in different parts of the site for optimal performance
+- ✅ **Clean and modular file structure** using best practices
+- ✅ **Reusable React components** and clear data separation
+- ✅ Responsive design for mobile & desktop
+- ✅ Deployed on **Vercel** 🚀
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js (App Router or Pages Router)
+- **Styling:**  CSS
+- **Data Source:** Local JSON / API with fetch
+- **Deployment:** Vercel
+- **Hosting:** GitHub + Vercel
+
+---
+
+## 📂 Pages & Routing
+
+| Route | Type | Description |
+|-------|------|-------------|
+| `/` | SSG | Homepage with featured items |
+| `/foods/[id]` | SSR | Server-rendered food detail page |
+| `/categories/[category]` | ISR | Category pages regenerated on demand |
+
+---
+
+## 🧪 How to run locally
 
 ```bash
+git clone https://github.com/AminMoradi1/food-site.git
+cd food-site
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
